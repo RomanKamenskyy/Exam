@@ -13,6 +13,9 @@
 		30134B5526375BEB00C37F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30134B5326375BEB00C37F95 /* Main.storyboard */; };
 		30134B5726375BEB00C37F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30134B5626375BEB00C37F95 /* Assets.xcassets */; };
 		30134B5A26375BEB00C37F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30134B5826375BEB00C37F95 /* LaunchScreen.storyboard */; };
+		30134B6326375C6100C37F95 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30134B6226375C6100C37F95 /* Question.swift */; };
+		30134B6626375D1800C37F95 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30134B6526375D1800C37F95 /* Answer.swift */; };
+		308E870C2638711400757E70 /* database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308E870B2638711400757E70 /* database.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		30134B5626375BEB00C37F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30134B5926375BEB00C37F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30134B5B26375BEB00C37F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30134B6226375C6100C37F95 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		30134B6526375D1800C37F95 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		308E870B2638711400757E70 /* database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				30134B4F26375BEB00C37F95 /* SceneDelegate.swift */,
 				30134B5126375BEB00C37F95 /* ViewController.swift */,
 				30134B5326375BEB00C37F95 /* Main.storyboard */,
+				308E870B2638711400757E70 /* database.swift */,
+				30134B6226375C6100C37F95 /* Question.swift */,
+				30134B6526375D1800C37F95 /* Answer.swift */,
 				30134B5626375BEB00C37F95 /* Assets.xcassets */,
 				30134B5826375BEB00C37F95 /* LaunchScreen.storyboard */,
 				30134B5B26375BEB00C37F95 /* Info.plist */,
@@ -138,6 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				30134B5226375BEB00C37F95 /* ViewController.swift in Sources */,
+				30134B6326375C6100C37F95 /* Question.swift in Sources */,
+				308E870C2638711400757E70 /* database.swift in Sources */,
+				30134B6626375D1800C37F95 /* Answer.swift in Sources */,
 				30134B4E26375BEB00C37F95 /* AppDelegate.swift in Sources */,
 				30134B5026375BEB00C37F95 /* SceneDelegate.swift in Sources */,
 			);
