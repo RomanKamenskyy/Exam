@@ -14,17 +14,19 @@ struct Answer {
 }
 
 enum AnswerRate: Int{
-    case hundred = 100
-    case twentyFive = 25
-    case ten = 10
+    case correct = 100
+    case wrong = 0
+    /*case hundred = 100//
+    case twentyFive = 25//
+    case ten = 10//
     case zero = 0
-    case fifty = 50
-    case seventyFive = 75
-    case thirty = 30
-    case forty = 40
-    case twenty = 20
-    case sixty = 60
-    case eighty = 80
+    case fifty = 50//
+    case seventyFive = 75//
+    case thirty = 30//
+    case forty = 40//
+    case twenty = 20//
+    case sixty = 60//
+    case eighty = 80*/
 }
 
 
