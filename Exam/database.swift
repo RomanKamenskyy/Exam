@@ -1771,7 +1771,7 @@ func generateQuestion() -> [Question]{
                                 Answer(name: "Детрит, еластичні волокна", rate: .wrong),
                                 Answer(name: "Еритроцити, кристали гематоїдину", rate: .wrong),
                                 Answer(name: "Кристали Шарко - Лейдена, еозинофіли", rate: .wrong),
-                                Answer(name: "Друзи променистого гриба", rate: .wrong)
+                                Answer(name: "Друзи променистого гриба", rate: .correct)
                              ], category: .cat7, imageName: ""))
     
     questionList.append(   Question(name: "Які елементи мокротиння є характерними для бронхіальної астми?",
@@ -1813,6 +1813,7 @@ func generateQuestion() -> [Question]{
                                 Answer(name: "Бронхіальна астма", rate: .wrong),
                                 Answer(name: "Абсцес легень", rate: .correct)
                              ], category: .cat8, imageName: ""))
+    
     questionList.append( Question(name: "При мікроскопії нативного мокротиння виявлені: лейкоцити зрідка, еритроцити подекуди, кристали холестерину, уривки хітинової оболонки з характерною рівномірною почерканістю, гачки, сколекси. Діагноз?",
                              answer: [
                                 Answer(name: "Бронхіальна астма", rate: .wrong),
@@ -1820,6 +1821,7 @@ func generateQuestion() -> [Question]{
                                 Answer(name: "Ехінококоз легень", rate: .correct),
                                 Answer(name: "Бронхоектатична хвороба", rate: .wrong)
                              ], category: .cat8, imageName: ""))
+    
     questionList.append( Question(name: "Хвора М поступила в лікарню з раптовим прискоренням дихання, труднощами видиху, здуттям грудної клітки. У хворої кількість еритроцитів  4,1 Т/л, лейкоцитів 8,0 Г/л: сегментоядерних- 40%, паличкоядерних- 4%, лімфоцитів - 26%, моцитів 6%, еозинофілів -24%. При мікроскопії мокротиння виявлено: велика кількість еозинофілів, кристали Шарко-Лейдена, спіраль Куршмана. Яке захворювання представлено в задачі?",
                              answer: [
                                 Answer(name: "Бронхіальна астма", rate: .correct),
@@ -1828,6 +1830,7 @@ func generateQuestion() -> [Question]{
                                 Answer(name: "Ангіна", rate: .wrong),
                                 Answer(name: "Хронічний бронхіт", rate: .wrong)
                              ], category: .cat8, imageName: ""))
+    
     questionList.append( Question(name: "Звернувся хворий зі скаргами на слабкість, втомлюваність, кашель з мокротинням. Макроскопічно - мокротиння гнійне з сірувато-жовтуватими зернами, при мікроскопічному досліджені препаратів фарбованих за Грамом на фоні великої кількості лейкоцитів виявлені нитки міцелію темно синього кольору з потовщенням на кінцях рожевого кольору. Про яке захворювання можна думати?",
                              answer: [
                                 Answer(name: "Актиномікоз легень", rate: .correct),
@@ -1836,69 +1839,446 @@ func generateQuestion() -> [Question]{
                                 Answer(name: "Бронхіальна астма", rate: .wrong),
                                 Answer(name: "Гострий бронхіт", rate: .wrong)
                              ], category: .cat8, imageName: ""))
+    
+    questionList.append( Question(name: "Які показники характеризують фізичні властивості сечі?",
+                             answer: [
+                                Answer(name: "Відносна густина, діурез, реакція, прозорість", rate: .correct),
+                                Answer(name: "Наявність циліндрів", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    
+    questionList.append( Question(name: "Що включають до поняття 'діурез'?",
+                             answer: [
+                                Answer(name: "Кількість сечі, доставленої в лабораторію", rate: .wrong),
+                                Answer(name: "Кількість сечі, що взято для аналізу", rate: .wrong),
+                                Answer(name: "Кількість першої ранкової порції сечі", rate: .wrong),
+                                Answer(name: "Кількість сечі, що виділена протягом доби", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    
+    questionList.append( Question(name: "Які елементи осаду сечі мають органічне походження?",
+                             answer: [
+                                Answer(name: "Формені елементи крові, епітеліальні клітини, циліндри", rate: .correct),
+                                Answer(name: "Кристалічні та аморфні солі", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    
+    questionList.append( Question(name: "Що включають до неорганічного осаду сечі?",
+                             answer: [
+                                Answer(name: "Епітеліальні клітини", rate: .wrong),
+                                Answer(name: "Циліндри", rate: .wrong),
+                                Answer(name: "Елементи крові", rate: .wrong),
+                                Answer(name: "Аморфні та кристалічні солі", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Для якого захворювання є характерним переважання еритроцитів над лейкоцитами у осаді сечі?",
+                             answer: [
+                                Answer(name: "Амілоїдоз", rate: .wrong),
+                                Answer(name: "Нефротичний синдром", rate: .wrong),
+                                Answer(name: "Пієлонефрит", rate: .wrong),
+                                Answer(name: "Гломерулонефрит", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Для якого захворювання є характерною тріада у осаді сечі: вилужені та фрагментовані еритроцити, кров'яні циліндри, фібрин бурозабарвлений?",
+                             answer: [
+                                Answer(name: "Пієлонефрит гострий", rate: .wrong),
+                                Answer(name: "Хронічна недостатність нирок", rate: .wrong),
+                                Answer(name: "Туберкульоз нирки", rate: .wrong),
+                                Answer(name: "Гострий гломерулонефрит", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Що включають до хімічного дослідження сечі?",
+                             answer: [
+                                Answer(name: "Визначення глюкози", rate: .correct),
+                                Answer(name: "Визначення білка", rate: .correct),
+                                Answer(name: "Підрахунок формених елементів", rate: .wrong),
+                                Answer(name: "Визначення різних хімічних речовин", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Для якого захворювання є характерним переважання лейкоцитів над еритроцитами у осаді сечі?",
+                             answer: [
+                                Answer(name: "Амілоїдоз", rate: .wrong),
+                                Answer(name: "Нефротичний синдром", rate: .wrong),
+                                Answer(name: "Хронічний гломерулонефрит", rate: .wrong),
+                                Answer(name: "Хронічний пієлонефрит", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Чим обумовлена аліментарна протеїнурія?",
+                             answer: [
+                                Answer(name: "Органічним ураженням паренхіми нирок", rate: .wrong),
+                                Answer(name: "Нирково-кам'яною хворобою", rate: .wrong),
+                                Answer(name: "Фізичними перевантаженнями", rate: .wrong),
+                                Answer(name: "Вживанням із їжею великої кількості білка", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Що таке селективна протеїнурія?",
+                             answer: [
+                                Answer(name: "Виділення із сечею білків з низькою молекулярною масою", rate: .correct),
+                                Answer(name: "Виділення із сечею білків з високою молекулярною масою", rate: .wrong),
+                                Answer(name: "Виділення із сечею білків з різною молекулярною масою", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Що таке неселективна протеїнурія?",
+                             answer: [
+                                Answer(name: "Виділення із сечею білків з низькою молекулярною масою", rate: .wrong),
+                                Answer(name: "Виділення із сечею білків з високою молекулярною масою або з різною молекулярною масою", rate: .correct),
+                                Answer(name: "Виділення із сечею білків Бенс-Джонса", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Про що може свідчити неселективна протеїнурія?",
+                             answer: [
+                                Answer(name: "Про легкий перебіг хвороби нирок", rate: .wrong),
+                                Answer(name: "Про печінкову недостатність", rate: .wrong),
+                                Answer(name: "Про тяжке ураження паренхіми нирок", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Що являють собою уретральні нитки?",
+                             answer: [
+                                Answer(name: "Циліндри", rate: .wrong),
+                                Answer(name: "Кристалічні утворення", rate: .wrong),
+                                Answer(name: "Видовжені утворення із слизу, що містять лейкоцити та клітини епітелію уретри", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Що являють собою циліндроїди?",
+                             answer: [
+                                Answer(name: "Кров'яні згортки циліндричної форми", rate: .wrong),
+                                Answer(name: "Циліндричної форми скупчення кристалів солей", rate: .wrong),
+                                Answer(name: "Подібні до циліндрів стрічковидні утворення із слизу, що поздовжньо почеркані", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Про що свідчать еластичні волокна в осаді сечі?",
+                             answer: [
+                                Answer(name: "Про амілоїдоз нирки", rate: .wrong),
+                                Answer(name: "Про наявність деструктивного процесу у нирках", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Про що свідчать лейкоцитарні циліндри в осаді сечі?",
+                             answer: [
+                                Answer(name: "Про цистит", rate: .wrong),
+                                Answer(name: "Про гломерулонефрит", rate: .wrong),
+                                Answer(name: "Про гнійний процес в нирках (пієлонефрит)", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Які фізико-хімічні властивості сечі є діагностично значущими для ліпоїдного нефротичного синдрому?",
+                             answer: [
+                                Answer(name: "Масивна протеїнурія, ферментурія, ліпідурія", rate: .correct),
+                                Answer(name: "Олігурія, висока відносна густина", rate: .wrong),
+                                Answer(name: "Оксалурія", rate: .wrong),
+                                Answer(name: "Макрогематурія", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Що являють собою вісмутові клітини?",
+                             answer: [
+                                Answer(name: "Клітини перехідного епітелію сечового міхура", rate: .wrong),
+                                Answer(name: "Клітини плоского епітелію", rate: .wrong),
+                                Answer(name: "Гістіоцитарні елементи", rate: .wrong),
+                                Answer(name: "Перероджені клітини епітелію ниркових канальців із темними кристалами в цитоплазмі", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "До якого різновиду раку відносять нирковоклітинний рак?",
+                             answer: [
+                                Answer(name: "Недиференційований", rate: .wrong),
+                                Answer(name: "Диморфний", rate: .wrong),
+                                Answer(name: "Органонеспецифічний", rate: .wrong),
+                                Answer(name: "Органоспецифічний", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Що можна виявити в осаді сечі здорової людини?",
+                             answer: [
+                                Answer(name: "Елементи багатошарового плаского епітелію", rate: .correct),
+                                Answer(name: "Елементи перехідного епітелію", rate: .correct),
+                                Answer(name: "Лейкоцити 3-6 в п/з, елементи плаского та перехідного епітелію, кристали кальцію оксалату", rate: .correct),
+                                Answer(name: "Еритроцити вилужені та фрагментовані", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Який епітелій покриває слизову оболонку сечовивідних органів?",
+                             answer: [
+                                Answer(name: "Багатошаровий плоский", rate: .wrong),
+                                Answer(name: "Перехідний", rate: .correct),
+                                Answer(name: "Багаторядний циліндричний", rate: .wrong),
+                                Answer(name: "Одношаровий плоский", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "У чому полягає принцип проби Зимницького?",
+                             answer: [
+                                Answer(name: "У динамічному спостереженні за коливаннями відносної густини сечі протягом доби", rate: .wrong),
+                                Answer(name: "У вивченні функції нирок на концентрацію та розведення сечі", rate: .correct),
+                                Answer(name: "У визначенні добової екскреції еритроцитів", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Який показник найточніше характеризує концентраційну здатність нирок?",
+                             answer: [
+                                Answer(name: "Діурез", rate: .wrong),
+                                Answer(name: "Проба Зимницького", rate: .wrong),
+                                Answer(name: "Проба Гріса-Ілосвай", rate: .wrong),
+                                Answer(name: "Осмотична концентрація сечі, визначена методом кріоскопії", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Що означає термін 'ніктурія'?",
+                             answer: [
+                                Answer(name: "Припинення виділення сечі", rate: .wrong),
+                                Answer(name: "Нічне нетримання сечі", rate: .wrong),
+                                Answer(name: "Болісне сечовиділення", rate: .wrong),
+                                Answer(name: "Збільшення об'єму сечі, виділеної протягом ночі", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Що означає термін 'анурія'?",
+                             answer: [
+                                Answer(name: "Припинення виділення сечі", rate: .correct),
+                                Answer(name: "Нічне нетримання сечі", rate: .wrong),
+                                Answer(name: "Болісне сечовиділення", rate: .wrong),
+                                Answer(name: "Збільшення об'єму сечі, виділенної протягом ночі", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Вміст якої речовини у сечі значно підвищує її відносну густину?",
+                             answer: [
+                                Answer(name: "Білірубін", rate: .wrong),
+                                Answer(name: "Глюкоза", rate: .correct),
+                                Answer(name: "Індикан", rate: .wrong),
+                                Answer(name: "Гемосидерин", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Що означає термін 'ізостенурія'?",
+                             answer: [
+                                Answer(name: "Наявність слизу в сечі", rate: .wrong),
+                                Answer(name: "Наявність білка в сечі", rate: .wrong),
+                                Answer(name: "Тривале виділення сечі з низькою відносною густиною, без коливань протягом доби", rate: .correct),
+                                Answer(name: "Наявність глюкози в сечі", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Що означає термін 'гіпостенурія'?",
+                             answer: [
+                                Answer(name: "Відносна густина сечі висока", rate: .wrong),
+                                Answer(name: "Відносна густина сечі низька з коливаннями протягом доби", rate: .correct),
+                                Answer(name: "Часте сечовиділення", rate: .wrong),
+                                Answer(name: "Болісне сечовиділення", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Гематурія характерна для:",
+                             answer: [
+                                Answer(name: "Гломерулонефриту", rate: .correct),
+                                Answer(name: "Туберкульозу та пухлин нирок", rate: .correct),
+                                Answer(name: "Гострої ниркової недостатності", rate: .correct),
+                                Answer(name: "Первинного порушення обміну порфіринів", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Органічна протеїнурія характерна для:",
+                             answer: [
+                                Answer(name: "Гострого та хронічного гломерулонефриту, ліпоїдного нефротичного синдрому", rate: .correct),
+                                Answer(name: "Декомпенсації діяльності серця", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Який пігмент переважає в сечі при механічній жовтяниці?",
+                             answer: [
+                                Answer(name: "Прямий білірубін", rate: .correct),
+                                Answer(name: "Урохроми", rate: .wrong),
+                                Answer(name: "Меланін", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Для якого захворювання характерна піурія?",
+                             answer: [
+                                Answer(name: "Гломерулонефрит", rate: .wrong),
+                                Answer(name: "Пієлонефрит", rate: .correct),
+                                Answer(name: "Амілоїдоз", rate: .wrong),
+                                Answer(name: "Травма нирки", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Для якого захворювання характерне одночасне виявлення у осаді сечі лейкоцитів та клітин ниркового епітелію?",
+                             answer: [
+                                Answer(name: "Простатит", rate: .wrong),
+                                Answer(name: "Цистит", rate: .wrong),
+                                Answer(name: "Пієлонефрит", rate: .correct),
+                                Answer(name: "Уретрит", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Для якого захворювання характерна виражена уробілінурія?",
+                             answer: [
+                                Answer(name: "Механічна жовтяниця", rate: .wrong),
+                                Answer(name: "Гемолітична жовтяниця", rate: .correct),
+                                Answer(name: "Хронічний гломерулонефрит", rate: .wrong),
+                                Answer(name: "Інфаркт нирки", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Для якого захворювання характерна білірубінурія?",
+                             answer: [
+                                Answer(name: "Гемолітична жовтяниця", rate: .wrong),
+                                Answer(name: "Нирковокам'яна хвороба", rate: .wrong),
+                                Answer(name: "Хронічний гломерулонефрит", rate: .wrong),
+                                Answer(name: "Паренхіматозна жовтяниця", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Для якого захворювання характерна гемоглобінурія?",
+                             answer: [
+                                Answer(name: "Гострий гломерулонефрит", rate: .wrong),
+                                Answer(name: "Пієлонефрит", rate: .wrong),
+                                Answer(name: "Цистит", rate: .wrong),
+                                Answer(name: "Гемолітична анемія із внутрісудинним гемолізом", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Для діагностики якого захворювання нирок препарати з осаду сечі фарбують за Цілем - Нільсеном?",
+                             answer: [
+                                Answer(name: "Пухлини нирок", rate: .wrong),
+                                Answer(name: "Нирковокам'яна хвороба", rate: .wrong),
+                                Answer(name: "Застійна нирка", rate: .wrong),
+                                Answer(name: "Туберкульоз нирки", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Які елементи осаду сечі характерні для ліпоїдного нефротичного синдрому?",
+                             answer: [
+                                Answer(name: "Краплі нейтрального жиру, голки жирних кислот, кристали холестерину", rate: .correct),
+                                Answer(name: "Жирноперероджені клітини ниркового епітелію, жирно-зернисті циліндри", rate: .correct),
+                                Answer(name: "Кров'яні циліндри", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Що включають ло поняття 'нирковий'осад сечі?",
+                             answer: [
+                                Answer(name: "Кристалічні солі", rate: .wrong),
+                                Answer(name: "Циліндри та елементи ниркового епітелію", rate: .correct),
+                                Answer(name: "Циліндроїди", rate: .wrong),
+                                Answer(name: "Елементи епітелію ендометрію", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "В чому полягає принцип метода Нечипоренка?",
+                             answer: [
+                                Answer(name: "Визначення кількості формених елементів у добовому об'ємі сечі", rate: .wrong),
+                                Answer(name: "Визначення кількості лейкоцитів, еритроцитів, циліндрів у 1 мл сечі", rate: .correct),
+                                Answer(name: "Оцінка концентраційної та видільної функції нирок", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "З якою метою застосовують експрес-метод виявлення прихованої лейкоцитурії?",
+                             answer: [
+                                Answer(name: "Для діагностики латентного пієлонефриту у дітей", rate: .correct),
+                                Answer(name: "Для оцінки екскреторної функції клубочків", rate: .wrong),
+                                Answer(name: "Для оцінки стану обміну пуринів", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Який з методів дослідження є найпростішим і досить ефективним в діагностиці раку сечового міхура?",
+                             answer: [
+                                Answer(name: "Дослідження осаду сечі", rate: .correct),
+                                Answer(name: "Відбитки біоптату пухлини", rate: .wrong),
+                                Answer(name: "Пунктат пухлини", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Який показник є характерним для гострої ниркової недостатності?",
+                             answer: [
+                                Answer(name: "Збільшення діурезу", rate: .wrong),
+                                Answer(name: "Зменшення діурезу або анурія", rate: .correct),
+                                Answer(name: "Ніктурія", rate: .wrong),
+                                Answer(name: "Полакіурія", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Яким терміном позначають збільшення об'єму сечі, виділеної протягом ночі?",
+                             answer: [
+                                Answer(name: "Поліурія", rate: .wrong),
+                                Answer(name: "Олігурія", rate: .wrong),
+                                Answer(name: "Ніктурія", rate: .correct),
+                                Answer(name: "Анурія", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Що означає термін 'полакіурія'?",
+                             answer: [
+                                Answer(name: "Зменшення діурезу", rate: .wrong),
+                                Answer(name: "Переважання об'єму сечі, виділеної протягом ночі", rate: .wrong),
+                                Answer(name: "Часте сечовиділення", rate: .correct),
+                                Answer(name: "Нечасте сечовиділення", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Чим обумовлена каламутність сечі при пієлонефриті?",
+                             answer: [
+                                Answer(name: "Лейкоцитами, бактеріями", rate: .correct),
+                                Answer(name: "Наявністю епітеліальних клітин", rate: .wrong),
+                                Answer(name: "Наявністю глюкози", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Які елементи у осаді сечі свідчать про запальний процес сечового міхура?",
+                             answer: [
+                                Answer(name: "Клітини ниркового епітелію", rate: .wrong),
+                                Answer(name: "Клітини плоского епітелію", rate: .wrong),
+                                Answer(name: "Клітини залозового епітелію", rate: .wrong),
+                                Answer(name: "Клітини перехідного епітелію, лейкоцити", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Чим може бути обумовлена функціональна протеїнурія?",
+                             answer: [
+                                Answer(name: "Ураженням паренхіми нирок", rate: .wrong),
+                                Answer(name: "Серцево-судинними захворюваннями", rate: .wrong),
+                                Answer(name: "Збільшенням розмірів шпарок ниркового фільтра", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Про яке захворювання свідчить лейкоцитурія з наявністю значної кількості елементів перехідного епітелію?",
+                             answer: [
+                                Answer(name: "Пухлини нирок", rate: .wrong),
+                                Answer(name: "Запальний процес сечовивідних органів", rate: .correct),
+                                Answer(name: "Нирково-печінкова недостатність", rate: .wrong),
+                                Answer(name: "Цукровий діабет", rate: .wrong)
+                             ], category: .cat9, imageName: "kld276.bmp"))
+    questionList.append( Question(name: "Яке захворювання супроводжує олігурія аж до анурії в перші дні розвитку хвороби?",
+                             answer: [
+                                Answer(name: "Хронічний пієлонефрит", rate: .wrong),
+                                Answer(name: "Нефротичний синдром", rate: .wrong),
+                                Answer(name: "Гемолітична жовтяниця", rate: .wrong),
+                                Answer(name: "Гостра ниркова недостатність", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Яке захворювання супроводжує кетонурія?",
+                             answer: [
+                                Answer(name: "Гострий гломерулонефрит", rate: .wrong),
+                                Answer(name: "Туберкульоз нирки", rate: .wrong),
+                                Answer(name: "Пухлина Вільмса", rate: .wrong),
+                                Answer(name: "Цукровий діабет", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Яке захворювання характеризує масивна протеїнурія (20 г/л і більше)?",
+                             answer: [
+                                Answer(name: "Нефротичний синдром", rate: .correct),
+                                Answer(name: "Застійна нирка", rate: .wrong),
+                                Answer(name: "Зморщена нирка", rate: .wrong),
+                                Answer(name: "Гострий пієлонефрит", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Для якого захворювання характерним є бідний ('німий') осад сечі за значної протеїнурії?",
+                             answer: [
+                                Answer(name: "Хронічний пієлонефрит", rate: .wrong),
+                                Answer(name: "Гострий гломерулонефрит", rate: .wrong),
+                                Answer(name: "Амілоїдоз нирок", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Про що свідчить наявність у осаді сечі кристалів лецитину та тирозину?",
+                             answer: [
+                                Answer(name: "Про порушення обміну жирів", rate: .wrong),
+                                Answer(name: "Про порушення обміну білків", rate: .correct),
+                                Answer(name: "Про порушення обміну вуглеводів", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Наявність кристалів гематоїдину в осаді сечі свідчить про:",
+                             answer: [
+                                Answer(name: "Вогнище некрозу у нирці", rate: .correct),
+                                Answer(name: "Нефротичний ліпоїдний синдром", rate: .wrong),
+                                Answer(name: "Цистит", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Як можна виявити наявність гемосидерину в осаді сечі?",
+                             answer: [
+                                Answer(name: "Мурексидною пробою", rate: .wrong),
+                                Answer(name: "Реакцією Перлса", rate: .correct),
+                                Answer(name: "З реактивом Селена", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Чим обумовлена нениркова протеїнурія?",
+                             answer: [
+                                Answer(name: "Інфекційними та токсичними ураженнями нирок", rate: .wrong),
+                                Answer(name: "Домішкою білка, що виділяють сечовивідні та статеві органи при запальних процесах в них", rate: .correct),
+                                Answer(name: "Аномаліями нирок", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Білірубінурія свідчить про:",
+                             answer: [
+                                Answer(name: "Підвищення в крові непрямого (некон'югованого) білірубіну", rate: .wrong),
+                                Answer(name: "Підвищення в крові прямого білірубіну", rate: .correct),
+                                Answer(name: "Наявність некротичного процесу в нирці", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "З чим пов'язують розвиток ниркової недостатності при ураженні паренхіми печінки?",
+                             answer: [
+                                Answer(name: "З гемолізом", rate: .wrong),
+                                Answer(name: "З різким зниженням здатності гепатоцитів поглинати жовчні кислоти з крові", rate: .correct),
+                                Answer(name: "З гіпогаптоглобінемією", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    
+    questionList.append( Question(name: "Про що може свідчити нітрітурія?",
+                             answer: [
+                                Answer(name: "Про захворювання на черевний тиф, паратифи", rate: .correct),
+                                Answer(name: "Про захворювання на туберкульоз", rate: .wrong),
+                                Answer(name: "Про захворювання на гонорею", rate: .wrong),
+                                Answer(name: "Про латентний перебіг хронічного пієлонефриту", rate: .correct)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Які коливання відносної густини сечі у пробі Зимницького вважаються нормальними?",
+                             answer: [
+                                Answer(name: "1,005 - 1,025", rate: .correct),
+                                Answer(name: "1,013 - 1,018", rate: .wrong),
+                                Answer(name: "1,002 - 1,011", rate: .wrong),
+                                Answer(name: "1,025 - 1,032", rate: .wrong),
+                                Answer(name: "1,000 - 1,005", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    
+    questionList.append( Question(name: "Нормальне значення відносної густини сечі в загальному аналізі сечі складає:",
+                             answer: [
+                                Answer(name: "1,020", rate: .correct),
+                                Answer(name: "1,006", rate: .wrong),
+                                Answer(name: "1,015", rate: .wrong),
+                                Answer(name: "1,032", rate: .wrong),
+                                Answer(name: "1,000", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    questionList.append( Question(name: "Добовий діурез в нормі складає:",
+                             answer: [
+                                Answer(name: "1,0 - 1,5 л", rate: .correct),
+                                Answer(name: "1,5 - 2,5 л", rate: .wrong),
+                                Answer(name: "0,5 - 1,0 л", rate: .wrong),
+                                Answer(name: "0,5 - 2,5 л", rate: .wrong),
+                                Answer(name: "2,5 - 3,5 л", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
+    
+    /*questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat9, imageName: ""))
     questionList.append( Question(name: "Клітини",
                              answer: [
                                 Answer(name: "Порушення", rate: .wrong),
                                 Answer(name: "Порушення", rate: .wrong),
                                 Answer(name: "Порушення", rate: .correct),
                                 Answer(name: "Порушення", rate: .wrong)
-                             ], category: .cat8, imageName: ""))
-    questionList.append( Question(name: "Клітини",
-                             answer: [
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .correct),
-                                Answer(name: "Порушення", rate: .wrong)
-                             ], category: .cat8, imageName: ""))
-    questionList.append( Question(name: "Клітини",
-                             answer: [
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .correct),
-                                Answer(name: "Порушення", rate: .wrong)
-                             ], category: .cat8, imageName: ""))
-    questionList.append( Question(name: "Клітини",
-                             answer: [
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .correct),
-                                Answer(name: "Порушення", rate: .wrong)
-                             ], category: .cat8, imageName: ""))
-    questionList.append( Question(name: "Клітини",
-                             answer: [
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .correct),
-                                Answer(name: "Порушення", rate: .wrong)
-                             ], category: .cat8, imageName: ""))
-    questionList.append( Question(name: "Клітини",
-                             answer: [
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .correct),
-                                Answer(name: "Порушення", rate: .wrong)
-                             ], category: .cat8, imageName: ""))
-    questionList.append( Question(name: "Клітини",
-                             answer: [
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .correct),
-                                Answer(name: "Порушення", rate: .wrong)
-                             ], category: .cat8, imageName: ""))
-    questionList.append( Question(name: "Клітини",
-                             answer: [
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .correct),
-                                Answer(name: "Порушення", rate: .wrong)
-                             ], category: .cat8, imageName: ""))
-    questionList.append( Question(name: "Клітини",
-                             answer: [
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .wrong),
-                                Answer(name: "Порушення", rate: .correct),
-                                Answer(name: "Порушення", rate: .wrong)
-                             ], category: .cat8, imageName: ""))
+                             ], category: .cat9, imageName: ""))*/
+    
+    
+    
+    
     
    
     
@@ -1912,9 +2292,6 @@ func generateQuestion() -> [Question]{
     
     
     
-    
-    
-    
-    //questionList.append(question1)
+   
     return questionList
 }

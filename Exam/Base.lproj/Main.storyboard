@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -83,6 +83,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Категория" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EcY-1X-RGW">
+                                <rect key="frame" x="20" y="44" width="350" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="Mjl-cq-sxq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="selectQuestion:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="sh2-JA-iXC"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -91,11 +102,13 @@
                             <constraint firstItem="njS-Xi-x8F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58.670000000000002" id="8R8-E8-2mA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V4k-dZ-YZ4" secondAttribute="trailing" constant="20" id="Bdc-BN-Eb2"/>
                             <constraint firstItem="SdC-EI-kWV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EUu-Ur-43A"/>
+                            <constraint firstItem="EcY-1X-RGW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HLe-Fz-fBc"/>
                             <constraint firstItem="fdG-QM-r5X" firstAttribute="top" secondItem="njS-Xi-x8F" secondAttribute="bottom" constant="20" id="HpK-Cs-3Nq"/>
                             <constraint firstItem="FFb-jr-3gb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="J7A-A6-ry2"/>
                             <constraint firstItem="njS-Xi-x8F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="K1K-PI-L0Q"/>
                             <constraint firstItem="V4k-dZ-YZ4" firstAttribute="top" secondItem="FFb-jr-3gb" secondAttribute="bottom" constant="35" id="Mg2-f7-2Jc"/>
                             <constraint firstItem="fdG-QM-r5X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="99" id="MzW-5O-n09"/>
+                            <constraint firstItem="EcY-1X-RGW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="STy-WJ-fMD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FFb-jr-3gb" secondAttribute="trailing" constant="20" id="SWW-Mv-RUo"/>
                             <constraint firstItem="FFb-jr-3gb" firstAttribute="top" secondItem="fdG-QM-r5X" secondAttribute="bottom" constant="29" id="U8W-iI-Srk"/>
                             <constraint firstItem="wYd-Xa-25Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Y5k-IG-fLR"/>
@@ -121,6 +134,7 @@
                         <outlet property="answerLabel4" destination="wYd-Xa-25Z" id="UO5-eN-mRg"/>
                         <outlet property="answerLabel5" destination="Vbf-8K-Hty" id="bej-AS-HqM"/>
                         <outlet property="catLabel" destination="njS-Xi-x8F" id="9f3-rM-Ecd"/>
+                        <outlet property="currentQuestionText" destination="EcY-1X-RGW" id="FDT-Z3-AIW"/>
                         <outlet property="questionLabel" destination="fdG-QM-r5X" id="5Zy-Q1-f1g"/>
                     </connections>
                 </viewController>

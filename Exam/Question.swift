@@ -24,6 +24,25 @@ enum QuestionCategoty: String{
     case cat6 = "7 Ситуаційні задачі за темою 'Анемії'"
     case cat7 = "8 Лабораторна діагностика захворювань органів дихання."
     case cat8 = "9 Ситуаційні задачі за темою 'Лабораторна діагностика захворювань органів дихання'"
+    case cat9 = "10 Лабораторна діагностика захворювань органів сечовиділення."
+}
+
+extension QuestionCategoty {
+    static func categotyList() -> [String]{
+        var categotyList: [String] = []
+        categotyList.append(QuestionCategoty.cat0.rawValue)
+        categotyList.append(QuestionCategoty.cat1.rawValue)
+        categotyList.append(QuestionCategoty.cat2.rawValue)
+        categotyList.append(QuestionCategoty.cat3.rawValue)
+        categotyList.append(QuestionCategoty.cat4.rawValue)
+        categotyList.append(QuestionCategoty.cat5.rawValue)
+        categotyList.append(QuestionCategoty.cat6.rawValue)
+        categotyList.append(QuestionCategoty.cat7.rawValue)
+        categotyList.append(QuestionCategoty.cat8.rawValue)
+        categotyList.append(QuestionCategoty.cat9.rawValue)
+        return categotyList
+    }
+
 }
 
 //extension Question {
