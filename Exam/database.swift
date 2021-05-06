@@ -2246,11 +2246,11 @@ func generateQuestion() -> [Question]{
     
     questionList.append( Question(name: "Нормальне значення відносної густини сечі в загальному аналізі сечі складає:",
                              answer: [
-                                Answer(name: "1,020", rate: .correct),
-                                Answer(name: "1,006", rate: .wrong),
-                                Answer(name: "1,015", rate: .wrong),
-                                Answer(name: "1,032", rate: .wrong),
-                                Answer(name: "1,000", rate: .wrong)
+                                Answer(name: "1.020 ", rate: .correct),
+                                Answer(name: "1.006 ", rate: .wrong),
+                                Answer(name: "1.015 ", rate: .wrong),
+                                Answer(name: "1.032 ", rate: .wrong),
+                                Answer(name: "1.000 ", rate: .wrong)
                              ], category: .cat9, imageName: ""))
     questionList.append( Question(name: "Добовий діурез в нормі складає:",
                              answer: [
@@ -2261,20 +2261,360 @@ func generateQuestion() -> [Question]{
                                 Answer(name: "2,5 - 3,5 л", rate: .wrong)
                              ], category: .cat9, imageName: ""))
     
-    /*questionList.append( Question(name: "Клітини",
+    questionList.append( Question(name: "Діурез - 200 мл; рН сечі - 6,0; відносна густина 1,028, білок 4 г/л. Осад сечі: клітини перехідного епітелію сечового міхура 1-5 в п/з; лейкоцити 10-15 в п/з; еритроцити, переважно вилужені, частково фрагментовані, окремо, скупченнями та у вигляді циліндрів - до 100 в п/з; клітини ниркового епітелію - 1-3 в п/з; циліндри: гіалінові, зернисті - поодинокі в п/з; епітеліальні, бурозабарвлені та кров'яні - поодинокі в препараті; фібрин бурозабарвлений - подекуди. Для якого захворювання є характерним описаний аналіз сечі?",
+                             answer: [
+                                Answer(name: "Гострий пієлонефрит", rate: .wrong),
+                                Answer(name: "Гострий гломерулонефрит", rate: .correct),
+                                Answer(name: "Нефротичний синдром", rate: .wrong),
+                                Answer(name: "Хронічний цистит", rate: .wrong)
+                             ], category: .cat10, imageName: "kld288.bmp"))
+    questionList.append( Question(name: "Діурез - 1000 мл; рН сечі - 6,0; відносна густина 1,015, білок 1,5 г/л. Осад сечі: елементи перехідного епітелію сечового міхура 3-5 в п/з; лейкоцити 15-20 в п/з; еритроцити, переважно вилужені та фрагментовані - 20-25 в п/з; клітини ниркового епітелію, переважно у стані зернистої та жирової дистрофії - 1-3 не в кожному п/з; циліндри: гіалінові, зернисті, епітеліальні, буропігментовані, кров'яні - поодинокі в п/з; жирно-зернисті та гіаліново-краплинні - поодинокі в препараті; краплі нейтрального жиру, голки жирних кислот, фібрин волокнистий, частково бурозабарвлений - подекуди. Для якого захворювання є характерним описаний аналіз сечі?",
+                             answer: [
+                                Answer(name: "Хронічний пієлонефрит", rate: .wrong),
+                                Answer(name: "Гостра ниркова недостатність", rate: .wrong),
+                                Answer(name: "Амілоїдоз", rate: .wrong),
+                                Answer(name: "Хронічний гломерулонефрит", rate: .correct)
+                             ], category: .cat10, imageName: ""))
+ 
+    questionList.append( Question(name: "Хвора поступила зі скаргами на  періодичні ниючі болі в поперековій області. При клінічному дослідженні сечі виявлено: питома вага сечі 1004, рН 5,0, протеїнурія до 0,7 г/сут. Осад сечі цегляно-червоний. Мікроскопічно: лейкоцити до 6-7 в полі зору; еритроцити до 8-10 в полі зору, переважно змінені (дисморфні). Епітелій нирки, частково жирно перероджений 1-2 не в кожному полі зору. Циліндри: кров'яні та зернисті-1-2 не в кожному полі зору, жирно зернисті- 1-2 в препараті. Який діагноз можна припустити?",
+                             answer: [
+                                Answer(name: "Хронічний гломерулонефрит", rate: .correct),
+                                Answer(name: "Хронічний пієлонефрит", rate: .wrong),
+                                Answer(name: "Гостра ниркова недостатьність", rate: .wrong),
+                                Answer(name: "Туберкульоз нирок", rate: .wrong),
+                                Answer(name: "Нефротичний синдром", rate: .wrong)
+                             ], category: .cat10, imageName: ""))
+ 
+    questionList.append( Question(name: "У вагітної жінки артеріальний тиск 180/100; набряки, діурез 400 мл; відносна густина сечі 1,030; рН сечі - 5,0; білок 8 г/л. Осад сечі: елементи перехідного епітелію сечового міхура - 5-8 в п/з; лейкоцити 10-15 в п/з; еритроцити, переважно незмінені - 3-5 в п/з; циліндри: гіалінові, зернисті - поодинокі не в кожному п/з. Про яке захворювання можна думати?",
+                             answer: [
+                                Answer(name: "Гострий гломерулонефрит", rate: .wrong),
+                                Answer(name: "Загострення хронічного пієлонефриту", rate: .wrong),
+                                Answer(name: "Нефропатія вагітних", rate: .correct),
+                                Answer(name: "Нефротичний синдром", rate: .wrong)
+                             ], category: .cat10, imageName: ""))
+ 
+    questionList.append( Question(name: "У хворого на фоні субфебрилітету діурез 1200 мл; рН сечі - 5,0; відносна густина 1,012; білок 1 г/л. Осад об'ємний, гнійний. Мікроскопія осаду: лейкоцити, переважно нейтрофіли, частково 'скловидні' та 'цвяхоподібні', на все поле зору; еритроцити, переважно вилужені - 10-15 в п/з; клітини перехідного епітелію мисок та епітелію нирок, частково у стані жирової дистрофії - 1-3-5 в п/з; циліндри - гіалінові, зернисті, лейкоцитарні - поодинокі в препараті; кристали холестерину - зрідка. Виявлено еластичні волокна та багатоядерні клітини, схожі з клітинами Пирогова-Лангганса. Які додаткові лабораторні дослідження необхідно виконати для встановлення діагнозу?",
+                             answer: [
+                                Answer(name: "Фарбування препаратів з осаду сечі за Цілем - Нільсеном", rate: .correct),
+                                Answer(name: "Дослідження сечі за Нечипоренком", rate: .wrong),
+                                Answer(name: "Встановлення наявності в сечі міоглобіну", rate: .wrong)
+                             ], category: .cat10, imageName: ""))
+ 
+    questionList.append( Question(name: "Для якої патології нирок характерні такі результати підрахунку елементів осаду сечі за Нечипоренком: лейкоцитів - 16000/мл, еритроцитів - 1500/мл, циліндрів 30/мл?",
+                             answer: [
+                                Answer(name: "Гострий гломерулонефрит", rate: .wrong),
+                                Answer(name: "Цистит", rate: .wrong),
+                                Answer(name: "Простатит", rate: .wrong),
+                                Answer(name: "Пієлонефрит", rate: .correct)
+                             ], category: .cat10, imageName: ""))
+ 
+    questionList.append( Question(name: "Загальний аналіз сечі: діурез – 1,5 л, колір-жовтий, прозорість - каламутна, рН 5, питома вага – 1020, білок - 0,066г/л, осад – оранжевий, кристалічний.  Мікроскопічне дослідження осаду сечі: лейкоцити - поодинокі в полі зору, еритроцити незмінені – поодинокі в полі зору, епітелій січевого міхура – 2-3-в полі зору, циліндри - гіалінові, поодинокі в полі зору. Слиз, частково у вигляді циліндроідів - помірна кількість. Кристали сечової кислоти поодинокі і зростками – велика кількість. Який діагноз можна припустити?",
+                             answer: [
+                                Answer(name: "Сечокам’яна хвороба", rate: .correct),
+                                Answer(name: "Гломерулонефрит", rate: .wrong),
+                                Answer(name: "Пієлонефрит", rate: .wrong),
+                                Answer(name: "Туберкульоз нирок", rate: .wrong),
+                                Answer(name: "Нефротичний синдром", rate: .wrong)
+                             ], category: .cat10, imageName: ""))
+ 
+    questionList.append( Question(name: "Хвора С. має скарги на періодичне підвищення температури до 37,0-37,5°С, болі в поперековій області. Загальний аналіз сечі: діурез 1,7 л (переважно вночі), колір – блідо-жовтий, прозорість – каламутна, рН 5,6, питома вага – 1008, білок – 0,99г/л, осад -  великий рихлий. Мікроскопічно: лейкоцити - поодинокі та  у вигляді скупчень - велика кількість. Епітелій нирки-  1-3 в полі зору. Еритроцити незмінені – поодинокі в полі зору. Циліндри – гіалінові та лейкоцитарні поодинокі в препараті. Яке захворювання у хворої?",
+                             answer: [
+                                Answer(name: "Гострий пієлонефрит", rate: .correct),
+                                Answer(name: "Гострий гломерулонефрит", rate: .wrong),
+                                Answer(name: "Нефротичний синдром", rate: .wrong),
+                                Answer(name: "Хронічний гломерулонефрит", rate: .wrong)
+                             ], category: .cat10, imageName: ""))
+ 
+    questionList.append( Question(name: "Хворого госпіталізовано після автомобільної катастрофи з масивною крововтратою. Діурез до 300 мл. Сеча з домішкою крові, рН – 6,0; відносна густина 1003; білок 1 г/л. При мікроскопічному дослідженні осаду: лейкоцити – 30-40 в полі зору; еритроцити вилужені,  прокривають все поле зору, зустрічаються незмінені, клітини ниркового епітелію, частково жирно- перероджені до 3 -5 в полі зору. Циліндри: гіалінові 3-5 в полі зору; зернисті, частково буропігментовані 3-6 в полі зору. Фібрин волокнистий, буро пігментований – зрідка, гемосидерин на формених елементах. Для якого захворювання є характерним даний аналіз сечі?",
+                             answer: [
+                                Answer(name: "Гостра ниркова недостатність", rate: .correct),
+                                Answer(name: "Гострий пієлонефрит", rate: .wrong),
+                                Answer(name: "Хронічний гломерулонефрит", rate: .wrong),
+                                Answer(name: "Нефротичний синдром", rate: .wrong)
+                             ], category: .cat10, imageName: ""))
+ 
+    questionList.append( Question(name: "Мікроскопія осаду сечі: лейкоцити 10-15 в п/з; еритроцити 8-10 в п/з, переважно змінені;  клітини епітелію нирок, переважно в стані жирової дистрофії –1-2 в п/з; виявлено циліндри: зернисті та епітеліальні 1-2 в препараті; буропігментовані 1-2 в препараті; жирно-зернисті 3-5 в препараті; гіаліново-краплинні; вакуолізовані 1-2 в препараті, поодиноки зерна гемосидерину. Які зміни в хімічному складі сечі характерні для хронічного гломерулонефриту?",
+                             answer: [
+                                Answer(name: "Протеїнурія", rate: .correct),
+                                Answer(name: "Глюкозурія", rate: .wrong),
+                                Answer(name: "Кетонурія", rate: .wrong),
+                                Answer(name: "Білірубінурія", rate: .wrong),
+                                Answer(name: "Уробілінурія", rate: .wrong)
+                             ], category: .cat10, imageName: ""))
+ 
+    questionList.append( Question(name: "Мікроскопічна картина осаду: лейкоцити 10-15 в п/з; еритроцити, переважно змінені (вилужені, фрагментовані) – до 1/2 поля зору; клітини епітелію нирки – 5-10 в п/з; клітини епітелію сечового міхура – 3-5 в п/з; циліндри: гіалінові – 3-5 в препараті; зернисті, епітеліальні – 1-3 в препараті; буропігментовані – 3-4 в препараті; кров’яні – 1-2 в препараті. Фібрин волокнистий, бурозабарвлений – подекуди. Діагноз: гострий гломерулонефрит. Які з елементи осаду сечі вказують на це?",
+                             answer: [
+                                Answer(name: "Еритроцити, буропігментовані циліндри", rate: .correct),
+                                Answer(name: "Лейкоцити, зернисті циліндри", rate: .wrong),
+                                Answer(name: "Нирковий епітелій, фібрин", rate: .wrong),
+                                Answer(name: "Епітелій сечового міхура, лейкоцити", rate: .wrong),
+                                Answer(name: "Гіалінові циліндри, фібрин", rate: .wrong)
+                             ], category: .cat10, imageName: ""))
+ 
+    questionList.append( Question(name: "Яким епітелієм вистелена слизова оболонка стравоходу?",
+                             answer: [
+                                Answer(name: "Циліндричним епітелієм", rate: .wrong),
+                                Answer(name: "Метаплазованим епітелієм", rate: .wrong),
+                                Answer(name: "Багатошаровим плоским епітелієм, який не здатний до зроговіння", rate: .correct),
+                                Answer(name: "Перехідним епітелієм", rate: .wrong)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "Яким епітелієм вистелена слизова оболонка шлунка?",
+                             answer: [
+                                Answer(name: "Багатошаровим плоским епітелієм", rate: .wrong),
+                                Answer(name: "Циліндричним епітелієм", rate: .correct),
+                                Answer(name: "Перехідним епітелієм", rate: .wrong),
+                                Answer(name: "Метаплазованим епітелієм", rate: .wrong)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "Які клітини залоз шлунка виробляють соляну кислоту?",
+                             answer: [
+                                Answer(name: "Головні клітини", rate: .wrong),
+                                Answer(name: "Додаткові клітини", rate: .wrong),
+                                Answer(name: "Обкладочні клітини", rate: .correct),
+                                Answer(name: "Аргентофільні клітини", rate: .wrong)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "Перевагою рН - метрії в порівнянні з титраційним методом дослідження кислотності шлункового соку є:",
+                             answer: [
+                                Answer(name: "Одержання точних даних про справжню кислотність шлункового вмісту", rate: .correct),
+                                Answer(name: "Визначення вмісту вільної соляної кислоти", rate: .wrong),
+                                Answer(name: "Встановлення тривалості шлункової секреції", rate: .wrong),
+                                Answer(name: "Встановлення локалізації патологічного процесу в шлунку", rate: .wrong)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "У яких випадках застосовують беззондові методи дослідження шлункової секреції?",
+                             answer: [
+                                Answer(name: "При діагностиці захворювань шлунка в ранньому дитячому віці", rate: .correct),
+                                Answer(name: "При варикозному розширенні вен та звуженні стравоходу", rate: .correct),
+                                Answer(name: "При виразці шлунка, що кровоточить", rate: .correct),
+                                Answer(name: "При інфаркті міокарда", rate: .correct),
+                                Answer(name: "При гастриті", rate: .wrong)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "Який із подразників шлункової секреції є найфізіологічнішим?",
+                             answer: [
+                                Answer(name: "Алкогольний", rate: .wrong),
+                                Answer(name: "Гістамін підшкірно", rate: .wrong),
+                                Answer(name: "Інсулін підшкірно", rate: .correct),
+                                Answer(name: "Капустяний сік", rate: .correct)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "При яких значеннях рН шлункового вмісту хворому призначають введення блокатора шлункової секреції?",
+                             answer: [
+                                Answer(name: "рН = 1,4", rate: .correct),
+                                Answer(name: "рН = 2,2", rate: .wrong),
+                                Answer(name: "рН = 2,7", rate: .wrong),
+                                Answer(name: "рН = 3,4", rate: .wrong)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "Який з методів дозволяє найоб'єктивніше оцінити кислотоутворюючу функцію шлунка при гіпо- і анацидних станах?",
+                             answer: [
+                                Answer(name: "Титраційний метод із використанням індикаторів", rate: .wrong),
+                                Answer(name: "Метод іонообмінних смол", rate: .wrong),
+                                Answer(name: "Метод визначення уропепсину", rate: .wrong),
+                                Answer(name: "Внутрішлункова рH - метрія", rate: .correct)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "Для якого із захворювань є характерним значне зниження кислотоутворення в шлунку?",
+                             answer: [
+                                Answer(name: "Виразкова хвороба дванадцятипалої кишки", rate: .wrong),
+                                Answer(name: "Хронічний гіпертрофічний гастрит", rate: .wrong),
+                                Answer(name: "Хронічний коліт", rate: .wrong),
+                                Answer(name: "Хронічний атрофічний гастрит", rate: .correct)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "Для якого із захворювань є характерним значне підвищення кислотоутворення в шлунку?",
+                             answer: [
+                                Answer(name: "Виразкова хвороба шлунка", rate: .correct),
+                                Answer(name: "Гострий гастрит", rate: .wrong),
+                                Answer(name: "Дуоденіт", rate: .wrong),
+                                Answer(name: "Холецистит", rate: .wrong)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "Яким методом досліджують ферментоутворюючу функцію шлунка?",
+                             answer: [
+                                Answer(name: "Якісне визначення пепсину", rate: .correct),
+                                Answer(name: "Кількісне визначення пепсину", rate: .correct),
+                                Answer(name: "Визначення уропепсину", rate: .correct),
+                                Answer(name: "Внутрішлункова рH - метрія", rate: .wrong)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "Що означає термін 'декомпенсований шлунок'?",
+                             answer: [
+                                Answer(name: "Зниження продукції лужних компонентів шлункового вмісту при гіперацидних станах шлунка", rate: .correct),
+                                Answer(name: "Недостатність продукції соляної кислоти клітинами залоз шлунка", rate: .wrong),
+                                Answer(name: "Недостатність продукції пепсину клітинами залоз шлунка", rate: .wrong),
+                                Answer(name: "Недостатність продукції гастромукопротеїну в шлунку", rate: .wrong)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "При мікроскопічному дослідженні шлункового вмісту виявлені краплі нейтрального жиру, рослинна клітковина в значній кількості, а також багато паличок молочнокислого бродіння. Про яку патологію можна думати?",
+                             answer: [
+                                Answer(name: "Гіперацидний гастрит", rate: .wrong),
+                                Answer(name: "Анацидний гастрит", rate: .wrong),
+                                Answer(name: "Гіпоацидний гастрит з уповільненням евакуації зі шлунка", rate: .correct),
+                                Answer(name: "Виразкова хвороба шлунка", rate: .wrong)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "Що означає термін 'ахілія'?",
+                             answer: [
+                                Answer(name: "Відсутність соляної кислоти", rate: .wrong),
+                                Answer(name: "Відсутність пепсину", rate: .wrong),
+                                Answer(name: "Відсутність гастрину", rate: .wrong),
+                                Answer(name: "Відсутність соляної кислоти і пепсину", rate: .correct)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "Яка патологія шлунка супроводжується появою в шлунковому вмісті сарцин?",
                              answer: [
                                 Answer(name: "Порушення", rate: .wrong),
                                 Answer(name: "Порушення", rate: .wrong),
                                 Answer(name: "Порушення", rate: .correct),
                                 Answer(name: "Порушення", rate: .wrong)
-                             ], category: .cat9, imageName: ""))
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Анацидні стани", rate: .wrong),
+                                Answer(name: "Ахілія", rate: .wrong),
+                                Answer(name: "Гіперхлоргідрія", rate: .wrong),
+                                Answer(name: "Стеноз пілоруса без порушення кислотоутворення", rate: .correct)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "Яка патологія шлунка супроводжується появою паличок молочнокислого бродіння?",
+                             answer: [
+                                Answer(name: "Анацидний стан", rate: .correct),
+                                Answer(name: "Ахілія", rate: .correct),
+                                Answer(name: "Гіперхлоргідрія", rate: .wrong),
+                                Answer(name: "Стеноз пілоруса за відсутності вільної соляної кислоти", rate: .correct)
+                             ], category: .cat11, imageName: ""))
+    questionList.append( Question(name: "Про що свідчать такі результати внутрішньошлункової рН - метрії: базальна рН - 1,0 у зоні кислотоутворюючих залоз, атропіновий тест негативний (різниця між базальною та послідовною рН - 0,02)?",
+                             answer: [
+                                Answer(name: "Нормальне кислотоутворення", rate: .wrong),
+                                Answer(name: "Гіперацидність", rate: .correct),
+                                Answer(name: "Гіпоацидність", rate: .wrong),
+                                Answer(name: "Анацидність", rate: .wrong)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "При проведенні внутрішньошлункової рН - метрії отримані такі результати: базальна рН - 6,0; після введення м'ясного бульйону рН - 4,8; після введення гістаміну рН - 2,0. Як варто оцінити результати?",
+                             answer: [
+                                Answer(name: "Знижене кислотоутворення зі слабкими функціональними можливостями", rate: .wrong),
+                                Answer(name: "Знижене кислотоутворення із середніми функціональними можливостями", rate: .wrong),
+                                Answer(name: "Знижене кислотоутворення з високими функціональними можливостями", rate: .correct),
+                                Answer(name: "Повна анацидність", rate: .wrong)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Які методи дослідження кислотоутворюючої функції шлунка відносять до беззондових?",
+                             answer: [
+                                Answer(name: "Десмоїдна проба", rate: .correct),
+                                Answer(name: "Проба з іонообмінною смолою", rate: .correct),
+                                Answer(name: "Радіометричний", rate: .correct),
+                                Answer(name: "Визначення уропепсиногену методом Туголукова", rate: .wrong)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "При мікроскопічному дослідженні шлункового вмісту виявлено: перетравна рослинна клітковина, неперетравна рослинна клітковина, м'язові волокна переважно незмінені, краплі нейтрального жиру, сарцини. Про яку патологію можна думати? ",
+                             answer: [
+                                Answer(name: "Гіперацидний гастрит", rate: .wrong),
+                                Answer(name: "Стеноз пілоруса зі збереженням кислотоутворюючої функції шлунка", rate: .correct),
+                                Answer(name: "Виразкова хвороба шлунка", rate: .wrong)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "При мікроскопічному дослідженні шлункового вмісту виявлено: перетравна рослинна клітковина, неперетравна рослинна клітковина, м'язові волокна переважно незмінені, краплі нейтрального жиру, палички молочнокислого бродіння. Діагноз?",
+                             answer: [
+                                Answer(name: "Стеноз пілоруса за відсутності вільної хлоридної кислоти", rate: .correct),
+                                Answer(name: "Гіперацидний гастрит", rate: .wrong),
+                                Answer(name: "Виразкова хвороба шлунка", rate: .wrong)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Який метод дослідження кислотоутворюючої функції шлунка є найінформативнішим?",
+                             answer: [
+                                Answer(name: "Титраційний", rate: .wrong),
+                                Answer(name: "Проба з іонообмінною смолою", rate: .wrong),
+                                Answer(name: "Внутрішньошлункова рН - метрія", rate: .wrong),
+                                Answer(name: "Радіотелеметричний", rate: .correct)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Який епітелій покриває слизову загального жовчного протока?",
+                             answer: [
+                                Answer(name: "Перехідний", rate: .wrong),
+                                Answer(name: "Плоский", rate: .wrong),
+                                Answer(name: "Кубічний", rate: .wrong),
+                                Answer(name: "Високопризматичний", rate: .correct)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Про що свідчить відсутність пузирної жовчі при проведенні дуоденального зондування?",
+                             answer: [
+                                Answer(name: "Спазм сфінктера Одді", rate: .correct),
+                                Answer(name: "Спазм сфінктера Мартинова-Люткінса", rate: .correct),
+                                Answer(name: "Жовчно-кам'яна хвороба", rate: .correct),
+                                Answer(name: "Пухлина жовчного міхура", rate: .correct),
+                                Answer(name: "Рак стравоходу", rate: .wrong)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Що може бути причиною збільшення об'єму пузирної жовчі?",
+                             answer: [
+                                Answer(name: "Гіпотонічна дискінезія", rate: .correct),
+                                Answer(name: "Гепатит", rate: .wrong),
+                                
+                                Answer(name: "Загострення холециститу", rate: .wrong)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Що є свдченням швидкого спорожнення жовчного міхура через 5 - 10 хвилин після введення 33% сірчанокислої магнезії у дванадцятипалу кишку?",
+                             answer: [
+                                Answer(name: "Гіпомоторна дискінезія жовчного міхура", rate: .wrong),
+                                
+                                Answer(name: "Гіпермоторна   дискінезію жовчного міхура", rate: .correct),
+                                Answer(name: "Дуоденіт", rate: .wrong)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Що є свдченням уповільненого, переривчастого виділення пузирної жовчі після введення в дванадцятипалу кишку 33% сірчанокислої магнезії?",
+                             answer: [
+                                Answer(name: "Гіпермоторна дискінезія жовчного міхура", rate: .wrong),
+                          
+                                Answer(name: "Гіпомоторна дискінезія жовчного міхура", rate: .correct),
+                                Answer(name: "Гастрит", rate: .wrong)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Яка причина  відсутности пузирної жовчі після введення в дванадцятипалу кишку 33% сірчанокислої магнезії?",
+                             answer: [
+                                Answer(name: "Холецистит", rate: .wrong),
+                                Answer(name: "Холангіт", rate: .wrong),
+                                Answer(name: "Жовчно-кам'яна хвороба", rate: .correct),
+                                Answer(name: "Гастрит", rate: .wrong)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Зелене забарвлення пузирної жовчі є свідченням?",
+                             answer: [
+                                Answer(name: "Зпалення загальної жовчної протоки", rate: .wrong),
+                                Answer(name: "Тривалого застою жовчі в жовчному міхурі", rate: .correct),
+                                Answer(name: "Запалення печінкових ходів", rate: .wrong),
+                                Answer(name: "Неспецифічного реактивного гепатиту", rate: .wrong),
+                                Answer(name: "Наявності домішки шлункового вмісту", rate: .correct)
+                             ], category: .cat12, imageName: ""))
     questionList.append( Question(name: "Клітини",
                              answer: [
                                 Answer(name: "Порушення", rate: .wrong),
                                 Answer(name: "Порушення", rate: .wrong),
                                 Answer(name: "Порушення", rate: .correct),
                                 Answer(name: "Порушення", rate: .wrong)
-                             ], category: .cat9, imageName: ""))*/
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Які клітинні елементи, що виявляють при мікроскопії дуоденального вмісту, є лейкоцитоїдами?",
+                             answer: [
+                                Answer(name: "Клітини вистілки печінкових ходів", rate: .wrong),
+                                Answer(name: "Елементи епітелію жовчного міхура", rate: .wrong),
+                                Answer(name: "Елементи епітелію загальної жовчної протоки", rate: .wrong),
+                                Answer(name: "Елементи зміненого циліндричного епітелію 12-палої кишки", rate: .correct)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Елементи якого епітелію можна виявити в жовчі?",
+                             answer: [
+                                Answer(name: "Внутрішньопечінкових жовчних ходів", rate: .correct),
+                                Answer(name: "Загальної жовчної протоки", rate: .correct),
+                                Answer(name: "Жовчного міхура", rate: .correct),
+                                Answer(name: "Плоского", rate: .wrong),
+                                Answer(name: "Дванадцятипалої кишки", rate: .correct)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Про яку патологію свідчить виявлення в жовчі лейкоцитів і елементів епітелію внутрішньопечінкових жовчних ходів?",
+                             answer: [
+                                Answer(name: "Холангіт", rate: .correct),
+                                Answer(name: "Холедохіт", rate: .wrong),
+                               
+                                Answer(name: "Гастрит", rate: .wrong)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Про яку патологію свідчить виявлення в жовчі лейкоцитів і елементів епітелію загальної жовчної протоки?",
+                             answer: [
+                                Answer(name: "Холангіт, холецистит", rate: .wrong),
+                                
+                                Answer(name: "Холедохіт", rate: .correct),
+                                Answer(name: "Гастрит", rate: .wrong)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Хворий пред'являє скарги на біль в епігастральній ділянці, раніше до лікаря не звертався. Які дослідження доцільно насамперед провести для  встановлення діагнозу?",
+                             answer: [
+                                Answer(name: "Первинна діагностика на H.pylori", rate: .correct),
+                                Answer(name: "Дослідження властивостей шлункового вмісту", rate: .wrong),
+                                Answer(name: "Дослідження властивостей дуоденального вмісту", rate: .wrong),
+                                Answer(name: "Дослідження калу", rate: .wrong),
+                                Answer(name: "рН- метрія шлункового вмісту", rate: .wrong)
+                             ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat12, imageName: ""))
+    
+ 
     
     
     
