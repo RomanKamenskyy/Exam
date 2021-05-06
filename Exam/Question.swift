@@ -8,6 +8,7 @@
 import UIKit
 
 struct Question {
+   // var Order: Int
     var name: String
     var answer: [Answer]
     var category: QuestionCategoty

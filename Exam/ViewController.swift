@@ -17,13 +17,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var answerLabel5: UILabel!
     @IBOutlet weak var currentQuestionText: UITextField!
     @IBOutlet weak var catLabel: UILabel!
+    @IBOutlet weak var iterator: UILabel!
     var answer1: String = ""
     var answer2: String = ""
     var answer3: String = ""
     var answer4: String = ""
     var answer5: String = ""
     
-    var selectedCategory: String?
+    var selectedCategory: String = ""
 
     var answerRate1: String = ""
     var answerRate2: String = ""
@@ -41,12 +42,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addDoneButtonTo(currentQuestionText)
+      //  addDoneButtonTo(currentQuestionText)
         choiceCategory()
      
         
-        
+        /////if selectedCategory != "" {
+          //  questionList = generateQuestion().filter{$0.category.rawValue == selectedCategory}
+        //}
         questionList = generateQuestion()
+      //  print(selectedCategory)
+        
+        
         countQuestion = questionList.count
         //currentQuestionText.text = String(currentQuestion)
        
@@ -59,9 +65,50 @@ class ViewController: UIViewController {
     }
     
     @IBAction func selectQuestion(_ sender: UITextField) {
-        currentQuestion = Int(sender.text!) ?? 0
-        print(Int(sender.text!) ?? 0)
-        showAllAnswerRate()
+       // currentQuestion = Int(sender.text!) ?? 0
+       // print(Int(sender.text!) ?? 0)
+       // showAllAnswerRate()
+    }
+    @IBAction func buttonLess(_ sender: UIButton) {
+     //   countAnsert = questionList[currentQuestion].answer.count
+        if currentQuestion >= 1 {
+            
+            currentQuestion = currentQuestion - 1
+            iterator.text = String(Int(iterator.text!)! - 1)
+            showAllAnswer(for: currentQuestion)
+           // Int(iterator.text!)
+        }
+    }
+    @IBAction func buttonMore(_ sender: UIButton) {
+    //    countAnsert = questionList[currentQuestion].answer.count
+        if (Int(iterator.text!)! + 1) < countQuestion{
+            currentQuestion = currentQuestion + 1
+            iterator.text = String(Int(iterator.text!)! + 1)
+            showAllAnswer(for: currentQuestion)
+            print(currentQuestion)
+        }
+        
+        
+    }
+    @IBAction func button100More(_ sender: UIButton) {
+     //   countAnsert = questionList[currentQuestion].answer.count
+        if (Int(iterator.text!)! + 100) < countQuestion{
+            currentQuestion = currentQuestion + 100
+            iterator.text = String(Int(iterator.text!)! + 100)
+            showAllAnswer(for: currentQuestion)
+        }
+      
+      
+    }
+    
+    @IBAction func button10More(_ sender: UIButton) {
+        countAnsert = questionList[currentQuestion].answer.count
+        if (Int(iterator.text!)! + 10) < countQuestion{
+            currentQuestion = currentQuestion + 10
+            iterator.text = String(Int(iterator.text!)! + 10)
+            showAllAnswer(for: currentQuestion)
+        }
+        
     }
     @IBAction func showAnswer(_ sender: UIButton) {
         showAllAnswerRate()
@@ -69,11 +116,11 @@ class ViewController: UIViewController {
     }
     @IBAction func gererateQuestionButton(_ sender: UIButton) {
         
-        countAnsert = questionList[currentQuestion].answer.count
+    //    countAnsert = questionList[currentQuestion].answer.count
         //let randInt = Int.random(in: 0..<46)
         showAllAnswer(for: currentQuestion)
         //
-        print(countQuestion)
+       // print(countQuestion)
        
     }
     
@@ -93,7 +140,7 @@ class ViewController: UIViewController {
             answerLabel5.text = ""
             
         }
-        if countAnsert == 3{
+        if countAnsert == 2{
            // answerLabel1.text = answerRate1+" - "+answer1
             if answerRate1 == "0"{
                 answerLabel1.backgroundColor = .red
@@ -214,14 +261,14 @@ class ViewController: UIViewController {
     }
     
     func showAllAnswer(for question: Int){
-        
+        countAnsert = questionList[question].answer.count
         answerLabel1.backgroundColor = .white
         answerLabel2.backgroundColor = .white
         answerLabel3.backgroundColor = .white
         answerLabel4.backgroundColor = .white
         answerLabel5.backgroundColor = .white
        
-        currentQuestionText.text = String(currentQuestion)
+        iterator.text = String(currentQuestion)
         if countAnsert == 2
         {
             answer1 = String(questionList[question].answer[0].name)
@@ -325,7 +372,7 @@ class ViewController: UIViewController {
 //        if currentQuestion == countQuestion - 1{
 //            currentQuestion = 0
 //        }
-        currentQuestion = currentQuestion + 1
+    //    currentQuestion = currentQuestion + 1
     }
     
     
@@ -336,10 +383,10 @@ class ViewController: UIViewController {
 extension ViewController: UITextFieldDelegate {
     
    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    /*func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
-    }
+    }*/
     
   
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -367,17 +414,39 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let array: [String] = QuestionCategoty.categotyList()
+        
+//        questionList = generateQuestion().filter{$0.category.rawValue == selectedCategory}
+//        currentQuestion = 0
+//        showAllAnswer(for: currentQuestion)
+//        //showAllAnswerRate(for: currentQuestion)
+        for (i,value) in questionList.enumerated() {
+            if value.category.rawValue == array[row]   {
+                currentQuestion = i
+                iterator.text = String(currentQuestion)
+                break//print(i, currentQuestion, selectedCategory, value.category.rawValue )
+            }
+        }
+        
         selectedCategory = array[row]
         currentQuestionText.text = selectedCategory
-        
+        showAllAnswer(for: currentQuestion)
+        print(currentQuestion, array[row])
         /*
         print(currentQuestion)
         if questionList[currentQuestion].category.rawValue == selectedCategory{
             print("2324")
         }
         */
-        let array2 = questionList.filter{$0.category.rawValue == selectedCategory}
-        print(array2[0])
+        //questionList = questionList.filter{$0.category.rawValue == selectedCategory}
+       // questionList = array2
+        /*for (index,value) in array2.enumerated(){
+            if value.category.rawValue == selectedCategory{
+                print(index,value)
+                //break
+            }
+            
+        }*/
+        
         //print(questionList.)
         
        // showAllAnswer(for question: Int)
@@ -385,7 +454,7 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     
     // Метод для отображения кнопки "Готово" на цифровой клавиатуре
-     func addDoneButtonTo(_ textField: UITextField) {
+   /*  func addDoneButtonTo(_ textField: UITextField) {
         
         let keyboardToolbar = UIToolbar()
         textField.inputAccessoryView = keyboardToolbar
@@ -414,5 +483,5 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         let okAction = UIAlertAction(title: "OK", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
-    }
+    }*/
 }
