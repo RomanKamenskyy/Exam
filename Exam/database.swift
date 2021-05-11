@@ -2606,15 +2606,546 @@ func generateQuestion() -> [Question]{
                                 Answer(name: "Дослідження калу", rate: .wrong),
                                 Answer(name: "рН- метрія шлункового вмісту", rate: .wrong)
                              ], category: .cat12, imageName: ""))
+    questionList.append( Question(name: "Для якої патології характерні такі дані дослідження жовчі, отриманої в 1-у фазу дуоденального зондування: 15 мл, блідо-жовтого кольору, рН =7.1, відносна густина 1.017, вміст білірубіну 110 мкмоль/л?",
+                             answer: [
+                                Answer(name: "Холецистит", rate: .wrong),
+                                Answer(name: "Дуоденіт", rate: .wrong),
+                                Answer(name: "Холедохіт", rate: .wrong),
+                                Answer(name: "Цироз печінки", rate: .correct)
+                             ], category: .cat13, imageName: ""))
+    questionList.append( Question(name: "Дані дослідження жовчі, одержані у 4-у фазу дуоденального зондування: 50 мл, виділилося за 10 хв., темно-коричнева із зеленкуватим відтінком з домішкою слизу, відносна густина 1,1025, рН=6,5, вміст білірубіну - 625 мкмоль/л. Мікроскопія: лейкоцити, еритроцити. Діагноз?",
+                             answer: [
+                                Answer(name: "Цироз печінки", rate: .wrong),
+                                
+                                Answer(name: "Холецистит", rate: .correct),
+                                Answer(name: "Холелітіаз", rate: .wrong)
+                             ], category: .cat13, imageName: ""))
+    questionList.append( Question(name: "Дані дослідження жовчі, одержаної у 5-ю фазу дуоденального зондування: 30 мл, зеленкуватого кольору, мутна з домішкою слизу, відносна густина 1,015-1,016, рН=6,7, вміст білірубіну 350 мкм/л, мікроскопія: лейкоцити, еритроцити, велика кількість елементів епітелію з жовчних протоків. Діагноз?",
+                             answer: [
+                                Answer(name: "Холангіт", rate: .correct),
+                                Answer(name: "Холедохіт", rate: .wrong),
+                        
+                                Answer(name: "Гепатит", rate: .wrong)
+                             ], category: .cat13, imageName: ""))
+    questionList.append( Question(name: "При мікроскопічному дослідженні жовчі в порції А виявлені кристали білірубінату кальцію в значній кількості, кристали холестерину і жирних кислот, мікроліти, лейкоцити в незначній кількості. Про який діагноз можна думати?",
+                             answer: [
+                                Answer(name: "Гострий холецистит", rate: .wrong),
+                                Answer(name: "Хронічний дуоденіт", rate: .wrong),
+                                Answer(name: "Гострий холангіт", rate: .wrong),
+                                Answer(name: "Жовчнокам'яна хвороба", rate: .correct)
+                             ], category: .cat13, imageName: ""))
+    questionList.append( Question(name: "При дослідженні калу встановлено: консистенція у вигляді щільних грудок сірувато-білого кольору, що кришаться, реакція слабокисла, реакція на стеркобілін і білірубін - негативна. При мікроскопії виявлена велика кількість жирних кислот. Який діагноз можна припустити?",
+                             answer: [
+                                Answer(name: "Обтурація загального жовчного протоку", rate: .correct),
+                                Answer(name: "Гострий холедохіт", rate: .wrong),
+                                Answer(name: "Гострий ентеріт", rate: .wrong),
+                                Answer(name: "Спастичний коліт", rate: .wrong),
+                                Answer(name: "Холецистіт", rate: .wrong)
+                             ], category: .cat13, imageName: ""))
+    questionList.append( Question(name: "Від чого залежить консистенція калу?",
+                             answer: [
+                                Answer(name: "Від вмісту води та жиру в калі", rate: .correct),
+                                Answer(name: "Від рН калу", rate: .wrong),
+                                Answer(name: "Від домішків крові", rate: .wrong),
+                                Answer(name: "Від кількості слізу", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Від чого залежить нормальне забарвлення калу?",
+                             answer: [
+                                Answer(name: "Від вмісту нейтрального жиру", rate: .wrong),
+                                Answer(name: "Від вмісту рослинної клітковини", rate: .wrong),
+                                Answer(name: "Від характеру їжі", rate: .wrong ),
+                                Answer(name: "Від вмісту стеркобіліну в калі", rate: .correct)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Які з препаратів можуть змінити колір калу на чорний?",
+                             answer: [
+                                Answer(name: "Антибіотики", rate: .wrong),
+                                Answer(name: "Препарати заліза", rate: .correct),
+                                Answer(name: "Аналгетики", rate: .wrong),
+                                Answer(name: "Сульфаніламідні препарати", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Якого раціону має дотримуватись пацієнт перед мікроскопічним дослідженням калу?",
+                             answer: [
+                                Answer(name: "Переважання овочів", rate: .wrong),
+                                Answer(name: "Переважання борошняних продуктів", rate: .wrong),
+                                Answer(name: "Звичайний раціон", rate: .correct),
+                                Answer(name: "Переважання жирів", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Який вигляд мають незмінені м'язові волокна при мікроскопії калу?",
+                             answer: [
+                                Answer(name: "Поліморфні блискучі зерна", rate: .wrong),
+                                Answer(name: "Циліндричної форми фрагменти із загостреними кутами та поперечною смугастістю", rate: .correct),
+                                Answer(name: "Ромбоподібні утворення", rate: .wrong),
+                                Answer(name: "Концентричні кола", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Який вигляд має нейтральний жир при мікроскопії нативного препарату калу?",
+                             answer: [
+                                Answer(name: "Прямокутники", rate: .wrong),
+                                Answer(name: "Голчасті кристали", rate: .wrong),
+                                Answer(name: "Черепашки", rate: .wrong),
+                                Answer(name: "Круглі або овальні безбарвні (або жовтаві) краплі", rate: .correct)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "У якому препараті краще диференціювати нейтральний жир?",
+                             answer: [
+                                Answer(name: "У нативному", rate: .wrong),
+                                Answer(name: "З розчином Люголю", rate: .wrong),
+                                Answer(name: "З водним (0,5%) розчином метиленового синього", rate: .correct),
+                                Answer(name: "З сульфатом нільского синього", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Який вигляд мають краплі нейтрального жиру при фарбуванні метиленовим синім?",
+                             answer: [
+                                Answer(name: "Зерна синього кольору", rate: .wrong),
+                                Answer(name: "Концентричні кола", rate: .wrong),
+                                Answer(name: "Овальні чорні утворення", rate: .wrong),
+                                Answer(name: "Світлі безбарвні (або жовтаві) краплі", rate: .correct)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Що є ознакою недостатнього надходження жовчі в кишечник?",
+                             answer: [
+                                Answer(name: "Сірувато-біле забарвлення калу, реакція на стеркобілін негативна", rate: .correct),
+                                Answer(name: "Наявність крохмальних зерен у калі", rate: .correct),
+                                Answer(name: "Наявність сполучної тканини у калі", rate: .wrong),
+                                Answer(name: "Наявність перетравної клітковини у калі", rate: .correct)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Чим пояснють золотаво-жовтий колір калу, що виникає при тривалому прийомі антибіотиків?",
+                             answer: [
+                                Answer(name: "Зміною кишкової мікрофлори", rate: .correct),
+                                Answer(name: "Підвищенням кислотності шлунку", rate: .wrong),
+                                Answer(name: "Бродильними процесами в кишечнику", rate: .correct),
+                                Answer(name: "Недостатністю травлення в тонкій кишці", rate: .correct)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Що означає термін 'стеаторея",
+                             answer: [
+                                Answer(name: "Наявність у калі непереварених елементів м'ясної їжі", rate: .wrong),
+                                Answer(name: "Наявність у калі великої кількості жиру", rate: .correct),
+                                Answer(name: "Наявність у калі слизу", rate: .wrong),
+                                Answer(name: "Зміна консистенції калу", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Що означає термін 'креаторея",
+                             answer: [
+                                Answer(name: "Наявність у калі великої кількості м'язових волокон", rate: .correct),
+                                Answer(name: "Наявність у калі жиру", rate: .wrong),
+                                Answer(name: "Наявність у калі слизу", rate: .wrong),
+                                Answer(name: "Зміна в консистенції калу", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Чим пояснюється різкий запах калу при навантаженні м'ясною їжею?",
+                             answer: [
+                                Answer(name: "Посиленням бродильних процесів", rate: .wrong),
+                                Answer(name: "Посиленням гнильних процесів", rate: .correct),
+                                Answer(name: "Збільшенням маси калу", rate: .wrong),
+                                Answer(name: "Зміною консистенції калу", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Який вигляд мають мила при мікроскопії нативного препарату калу?",
+                             answer: [
+                                Answer(name: "Короткі голочки, брилки, пучки", rate: .correct),
+                                Answer(name: "Шестикутні таблички", rate: .wrong),
+                                Answer(name: "Пористі структури", rate: .wrong),
+                                Answer(name: "Прямокутники", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Який вигляд має рослинна перетравна клітковина в нативному препараті калу?",
+                             answer: [
+                                Answer(name: "Великі округлі та овальні безбарвні (або сірі) клітини з нечітким розпливчастим вмістом", rate: .correct),
+                                Answer(name: "Структури у вигляді черепашок", rate: .wrong),
+                                Answer(name: "Покручені спіралі", rate: .wrong),
+                                Answer(name: "Різко окреслені ромби", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Про що свідчить макроскопічно видима домішка слизу на поверхні калу?",
+                             answer: [
+                                Answer(name: "Про порушення процесу травлення в шлунку", rate: .wrong),
+                                Answer(name: "Про захворювання підшлункової залози", rate: .wrong),
+                                Answer(name: "Про запальний процес у тонкій кишці", rate: .wrong),
+                                Answer(name: "Про запальний процес у нижніх відділах товстої кишки", rate: .correct)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Якщо в калі свіжа домішка крові, з якого відділу травного каналу відбувається кровотеча?",
+                             answer: [
+                                Answer(name: "Із шлунка", rate: .wrong),
+                                Answer(name: "Із тонкої кишки", rate: .wrong),
+                                Answer(name: "Із стравоходу", rate: .wrong),
+                                Answer(name: "Із прямої кишки", rate: .correct)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Коли реакція калу стає кислою?",
+                             answer: [
+                                Answer(name: "При активізації гнильної мікрофлори", rate: .wrong),
+                                Answer(name: "При посиленні бродильних процесів", rate: .correct),
+                                Answer(name: "При значному вмісті в калі жирних кислот", rate: .wrong),
+                                Answer(name: "При недостатності травлення у шлунку", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Значна кількість непереварених і слабопереварених м'язових волокон у калі є свідченням?",
+                             answer: [
+                                Answer(name: "Недостатності шлункового травлення", rate: .wrong),
+                                Answer(name: "Недостатності функції підшлункової залози", rate: .correct),
+                                Answer(name: "Недостатності травлення у товстій кишці", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Велика кількість нейтрального жиру у калі при відсутності жирних кислот свідчить про?",
+                             answer: [
+                                Answer(name: "Про недостатність шлункового травлення", rate: .wrong),
+                                Answer(name: "Про недостатність секреторної функції печінки", rate: .wrong),
+                                Answer(name: "Про недостатність секреторної функції підшлункової залози", rate: .correct),
+                                Answer(name: "Про ферментативну недостатність тонкої кишки", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "При якій патології в калі найчастіше виявляють крохмальні зерна?",
+                             answer: [
+                                Answer(name: "При захворюванні шлунка", rate: .wrong),
+                                Answer(name: "При захворюваннях тонкої кишки, що супроводжуються посиленням її перистальтики", rate: .correct),
+                                Answer(name: "При захворюваннях печінки", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "При якому захворюванні з'являється ахолічний кал?",
+                             answer: [
+                                Answer(name: "Атрофічний гастрит", rate: .wrong),
+                                Answer(name: "Дизентерія", rate: .wrong),
+                                Answer(name: "Рак голівки підшлункової залози", rate: .correct),
+                                Answer(name: "Хронічний ентерит", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Коли буває чорний колір калу?",
+                             answer: [
+                                Answer(name: "Кровотеча з гемороїдальних вузлів", rate: .wrong),
+                                Answer(name: "Кровотеча із шлунка або 12-ти палої кишки", rate: .correct),
+                                Answer(name: "Кровотеча з товстої кишки", rate: .wrong),
+                                Answer(name: "Кровотеча з тріщин ануса", rate: .wrong),
+                                Answer(name: "Прийом препаратів заліза", rate: .correct)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "При якому захворюванні у калі виявляють велику кількість перетравної клітковини, крохмалю, йодофільної флори?",
+                             answer: [
+                                Answer(name: "Гнильна диспепсія", rate: .wrong),
+                                Answer(name: "Бродильна диспепсія", rate: .correct),
+                                Answer(name: "Дизентерія", rate: .wrong),
+                                Answer(name: "Спастичний коліт", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Що є ознакою недостатності надходження жовчі в кишку?",
+                             answer: [
+                                Answer(name: "Сірувато-білий колір калу", rate: .correct),
+                                Answer(name: "Наявність йодофільної флори", rate: .wrong),
+                                Answer(name: "Наявність сполучної тканини", rate: .wrong),
+                                Answer(name: "Наявність слизу", rate: .wrong),
+                                Answer(name: "Негативна реакція на стеркобілін", rate: .correct)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Для якого захворювання характерний рідкий кал у вигляді 'рисового відвару",
+                             answer: [
+                                Answer(name: "Виразкова хвороба шлунка", rate: .wrong),
+                                Answer(name: "Дизентерія", rate: .wrong),
+                                Answer(name: "Холера", rate: .correct),
+                                Answer(name: "Спастичний коліт", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Про що свідчить велика кількість перетравної клітковини в калі?",
+                             answer: [
+                                Answer(name: "Захворювання печінки", rate: .wrong),
+                                Answer(name: "Прискорена евакуація", rate: .correct),
+                                Answer(name: "Захворювання стравоходу", rate: .wrong),
+                                Answer(name: "Запалення тонкої кишки", rate: .correct)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Який із препаратів дає змогу диференціювати нейтральний жир і жирні кислоти?",
+                             answer: [
+                                Answer(name: "Метиленовий синій", rate: .correct),
+                                Answer(name: "Розчин Люголя", rate: .wrong),
+                                Answer(name: "Розчином оцтової кислоти", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Як можна відрізнити в препаратах калу волокна сполучної тканини від тяжів слизу?",
+                             answer: [
+                                Answer(name: "Фарбуванням суданом III", rate: .wrong),
+                                Answer(name: "Фарбуванням розчином Люголя", rate: .wrong),
+                                Answer(name: "Додаванням лугу", rate: .wrong),
+                                Answer(name: "Додаванням оцтової кислоти", rate: .correct)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "При якій патології реакція калу різко кисла, виявляється велика кількість крохмалю, перетравної клітковини, йодофільної флори?",
+                             answer: [
+                                Answer(name: "Недостатність травлення в шлунку", rate: .wrong),
+                                Answer(name: "Бродильна диспепсія", rate: .correct),
+                                Answer(name: "Гнильна диспепсія", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "При якому стані реакція калу слаболужна, виявляються поодинокі м'язові волокна, кристали жирних кислот і мила - подекуди?",
+                             answer: [
+                                Answer(name: "Запор", rate: .wrong),
+                                Answer(name: "Гнильна диспепсія", rate: .wrong),
+                                Answer(name: "Бродильна диспепсія", rate: .wrong),
+                                Answer(name: "Нормальне травлення", rate: .correct)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "При якій патології реакція калу різко лужна, виявляється збільшена кількість мил і перетравної клітковини, наявний білок і трипельфосфати?",
+                             answer: [
+                                Answer(name: "Прискорена евакуація з товстих кишок", rate: .wrong),
+                                Answer(name: "Бродильна диспепсія", rate: .wrong),
+                                Answer(name: "Гнильна диспепсія", rate: .correct),
+                                Answer(name: "Коліт із проносом", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "При якій патології реакція калу лужна, неперетравної клітковини помірна кількість, перетравної - багато, м'язових волокон незмінених помірна кількість, поодинокі шматочки сполучної тканини, помірна кількість мил?",
+                             answer: [
+                                Answer(name: "Недостатність шлункового травлення", rate: .correct),
+                                Answer(name: "Недостатність функції підшлункової залози", rate: .correct),
+                                Answer(name: "Нормальне травлення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "При якій патології реакція калу кисла, м'язові волокна недостатньо змінені, жирних кислот велика кількість, мил небагато?",
+                             answer: [
+                                Answer(name: "Недостатність шлункового травлення", rate: .wrong),
+                                Answer(name: "Недостатність надходження жовчі", rate: .correct),
+                                Answer(name: "Недостатність травлення в тонкому кишечнику", rate: .wrong),
+                                Answer(name: "Бродильна диспепсія", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "При якій патології реакція калу слаболужна, м'язові волокна змінені і незмінені - помірна кількість, нейтрального жиру, жирних кислот і мил - помірна кількість, крохмалю і перетравної клітковини - багато?",
+                             answer: [
+                                Answer(name: "Гнильна диспепсія", rate: .wrong),
+                                Answer(name: "Коліт із запором", rate: .wrong),
+                                Answer(name: "Недостатність травлення в тонкому кишечнику", rate: .correct),
+                                Answer(name: "Бродильна диспепсія", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "При якій патології реакція калу лужна, слизу помірна кількість, м'язові волокна змінені -місцями, мила - подекуди?",
+                             answer: [
+                                Answer(name: "Коліт із запором", rate: .correct),
+                                Answer(name: "Коліт з поносом", rate: .wrong),
+                                Answer(name: "Бродильна диспепсія", rate: .wrong),
+                                Answer(name: "Гнильна диспепсія", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Позитивна реакція Трибуле-Вишнякова свідчить про:",
+                             answer: [
+                                Answer(name: "Підвищений вміст харчового білка в калі", rate: .wrong),
+                                Answer(name: "Наявність виразкових і запальних процесів у кишці", rate: .correct),
+                                Answer(name: "Порушення перетравлення білків у кишці", rate: .wrong),
+                                Answer(name: "Наявність запорів", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Який метод визначення прихованої крові у калі дає найдостовірнішу інформацію?",
+                             answer: [
+                                Answer(name: "Бензидиновий", rate: .wrong),
+                                Answer(name: "Пірамідоновий", rate: .wrong),
+                                Answer(name: "Проба з гваяковою смолою", rate: .wrong),
+                                Answer(name: "Із радіоактивним хромом", rate: .correct)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "При дослідженні калу встановлено: консистенція у вигляді щільних грудок сірувато-білого кольору, що кришаться, реакція слабокисла, реакція на стеркобілін і білірубін - негативна. При мікроскопії виявлена велика кількість жирних кислот. Діагноз?",
+                             answer: [
+                                Answer(name: "Обтурація загального жовчного протоку", rate: .correct),
+                                Answer(name: "Гострий холедохіт", rate: .wrong),
+                                Answer(name: "Гострий ентеріт", rate: .wrong),
+                                Answer(name: "Спастичний коліт", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Встановлено: консистенція калу рідка, запах гнильний, рН=8.5, при мікроскопії виявлена помірна кількість м'язових волокон, перетравна клітковина, крохмаль, солі жирних кислот, кристали трипельфосфату, лейкоцити із дегенеративними змінами",
+                             answer: [
+                                Answer(name: "Бродильний коліт", rate: .wrong),
+                                Answer(name: "Гнильна диспепсія", rate: .correct),
+                                Answer(name: "Спастичний коліт", rate: .wrong),
+                                Answer(name: "Виразково-некротичний коліт", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    /*questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
     questionList.append( Question(name: "Клітини",
                              answer: [
                                 Answer(name: "Порушення", rate: .wrong),
                                 Answer(name: "Порушення", rate: .wrong),
                                 Answer(name: "Порушення", rate: .correct),
                                 Answer(name: "Порушення", rate: .wrong)
-                             ], category: .cat12, imageName: ""))
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
     
- 
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+    questionList.append( Question(name: "Клітини",
+                             answer: [
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .wrong),
+                                Answer(name: "Порушення", rate: .correct),
+                                Answer(name: "Порушення", rate: .wrong)
+                             ], category: .cat14, imageName: ""))
+
+
+    
+ */
     
     
     

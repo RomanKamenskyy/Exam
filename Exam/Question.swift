@@ -29,6 +29,8 @@ enum QuestionCategoty: String{
     case cat10 = "11 Ситуаційні задачі за темою 'Лабораторна діагностика захворювань органів сечовиділення'"
     case cat11 = "12 Лабораторна діагностика захворювань органів травної системи."
     case cat12 = "13 Ситуаційні задачі за темою 'Лабораторна діагностика захворювань органів травної системи"
+    case cat13 = "14 Ситуаційні задачі з дослідження жовчі"
+    case cat14 = "15 Дослідження калу."
 }
 
 extension QuestionCategoty {
@@ -47,6 +49,8 @@ extension QuestionCategoty {
         categotyList.append(QuestionCategoty.cat10.rawValue)
         categotyList.append(QuestionCategoty.cat11.rawValue)
         categotyList.append(QuestionCategoty.cat12.rawValue)
+        categotyList.append(QuestionCategoty.cat13.rawValue)
+        categotyList.append(QuestionCategoty.cat14.rawValue)
         return categotyList
     }
 
